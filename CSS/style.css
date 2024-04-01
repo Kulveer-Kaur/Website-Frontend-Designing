@@ -521,7 +521,7 @@
 }
 .work-outer-box > .work-inner > .work-div2:before {
   position: absolute;
-  content: "";
+  /*  content: ""; */
   width: 100%;
   height: 100%;
   top: 0px;
@@ -529,6 +529,9 @@
   background-color: white;
   transform: skewX(-15deg);
   margin-left: -35px;
+  /* Content */
+  content: image-set("../assets/ProcessImages/process1.svg");
+  align-items: center;
 }
 .work-outer-box > .work-inner > .work-div3 {
   height: 100%;
@@ -539,7 +542,7 @@
 }
 .work-outer-box > .work-inner > .work-div3:before {
   position: absolute;
-  content: "";
+  content: image-set("../assets/ProcessImages/process2.svg");
   width: 100%;
   height: 100%;
   top: 0px;
@@ -560,7 +563,7 @@
 }
 .work-outer-box > .work-inner > .work-div4:before {
   position: absolute;
-  content: "";
+  content: image-set("../assets/ProcessImages/process3.svg");
   width: 100%;
   height: 100%;
   top: 0px;
@@ -796,3 +799,233 @@
   color: rgb(213, 158, 158);
   padding: 2px;
 }
+
+/* End Note Section */
+.note-outer {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.note-outer > .note-inner {
+  width: 75%;
+  height: 50%;
+  display: flex;
+}
+.note-inner > .note-para {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.para-line {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.para-line > .para-inner-line {
+  width: 9%;
+  height: 20%;
+  display: flex;
+  background-color: rgb(199, 198, 198);
+}
+.para-head {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.para-head > h3 {
+  display: flex;
+  color: rgb(207, 33, 41);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.6;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.para-desc {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+.para-desc > p {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  opacity: 0.8;
+}
+.note-inner > .note-symbol {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Note Symbol */
+.symbol-inner {
+  width: 130px;
+  height: 90px;
+  display: flex;
+  background-color: rgb(221, 221, 220);
+  z-index: 1;
+  position: relative;
+  border-radius: 3px;
+}
+.symbol-inner:after {
+  width: 110%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: rgb(205, 32, 35);
+  z-index: 2;
+  position: absolute;
+  content: "FIND OUT MORE";
+  margin-left: -7px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+  border-radius: 3px;
+}
+/* Footer */
+.foot-outer {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  background-color: rgb(47, 46, 46);
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.foot-about-outer {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  margin-top: 60px;
+}
+.foot-about {
+  width: 75%;
+  height: 100%;
+  display: flex;
+}
+.foot-desc {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-head {
+  font-size: 15px;
+  color: white;
+  display: flex;
+}
+.foot-para {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d5d5d5;
+  line-height: 1.5;
+}
+/* Get in Touch section */
+.foot-touch {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.foot-touch > .touch-para {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+.foot-touch > .touch-para > p {
+  color: white;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.foot-touch > .touch-mail {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.foot-touch > .touch-mail > a,
+.foot-touch > .touch-skype > a {
+  text-decoration: none;
+  color: #d5d5d5;
+  font-size: 15px;
+}
+.fa-envelope,
+.fa-skype {
+  color: #d5d5d5;
+  font-size: 15px;
+}
+.fa-envelope {
+  margin: 5px;
+}
+.foot-touch > .touch-skype {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  font-size: 10px;
+  text-decoration: none;
+  align-items: center;
+}
+/* Footer Social Icons */
+.foot-social-outer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foot-social-outer > .social-head {
+  width: 75%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  color:#d5d5d5;
+}
+.foot-social-outer > .social-icons {
+  width: 75%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+.foot-social-outer > .hr-div {
+  width: 75%;
+  height: 3%;
+  display: flex;
+  align-items: center;
+  color: #d5d5d5;
+  background-color: rgb(72,73,73);
+}
+.foot-social-outer > .social-foot {
+  width: 75%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  color:#d5d5d5;
+}
+.foot-social-outer > .social-icons>.fa-brands{
+  font-size: 30px;
+  color: #d5d5d5;
+}
+.foot-social-outer>.social-foot>p{
+  color:#8b8c8d;
+  font-size: 13px;
+}
+.end{
+  margin-left: 550px;
+  color:white;
+}
+
